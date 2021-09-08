@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 25px;
+  border: solid 2px aquamarine;
+  border-radius: 8px;
+  width: 200px;
+  height: 200px;
+}
+
+input {
+  border: solid black 1px;
+  border-radius: 4px;
+  background-color: transparent;
+  margin-top: 5px;
+}
+
+input#email {
+  margin-bottom: 15px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  height: 36px;
+  width: 100%;
+  margin-top: 25px;
+  border-radius: 3px;
+}
