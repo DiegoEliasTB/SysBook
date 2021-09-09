@@ -15,16 +15,18 @@
     <nav>
       <ul>
         <li><a href="../../home.php">Home</a></li>
-        <li><a href="./books/">Livros</a></li>
-        <li><a href="logout.php">Sair</a></li>
+        <li><a href="./">Livros</a></li>
+        <li><a href="../../logout.php">Sair</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <form action="">
-      <label for="">id</label>
-      <input type="text">
+    <?php 
+      $id = $_GET['id']; 
+      echo("<form action='editar.php?id={$id}' method='POST'>");
+      echo("<h2>teste</h2>");
+    ?>
       <label for="nome_livro">Nome</label>
       <input type="text" name="nome_livro">
       <label for="autor">Autor</label>
@@ -48,7 +50,7 @@
       </div>
       <label for="numero">Número de páginas</label>
       <input oninput="clickk()" type="range" min="30" max="600" step="1" name="numero" id="numero">
-      <span id="numeroValue">0</span>
+      <span id="numeroValue">300</span>
       
       <label for="valor">Valor</label>
       <input type="text" name="valor">

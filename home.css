@@ -58,6 +58,7 @@ li a {
 }
 
 a{
+  cursor: pointer;
   color: white;
   transition: 600ms;
 }

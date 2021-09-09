@@ -15,7 +15,7 @@
       <ul>
         <li><a href="../../home.php">Home</a></li>
         <li><a href="./">Livros</a></li>
-        <li><a href="logout.php">Sair</a></li>
+        <li><a href="../../logout.php">Sair</a></li>
       </ul>
     </nav>
   </header>
@@ -32,6 +32,7 @@
       $query = 
       "
         SELECT 
+          id_livro,
           nome_livro,
           autor,
           idioma,
@@ -59,6 +60,7 @@
       ");
     
       while($registro = mysqli_fetch_array($result)) {
+        $id_livro = $registro['id_livro'];
         $nome = $registro['nome_livro'];
         $autor = $registro['autor'];
         $idioma = $registro['idioma'];
@@ -72,6 +74,8 @@
         echo("<td style='{$style_td}'>$num_paginas</td>");
         echo("<td style='{$style_td}'>$valor</td>");
         echo("<td style='{$style_td}'>$categoria</td>");
+        echo("<td><a href='./u_book.php?id={$id_livro}'>Editar</a></td>");
+        echo("<td><a href='deletar.php?id={$id_livro}'>Deletar</a></td>");
         echo("</tr>");
         echo("<br>");
       }
@@ -82,7 +86,7 @@
 
       mysqli_close($connect);
     ?>
-    <button>Cadastrar</button>
+    <button id="buttonDelete">Cadastrar</button>
   </main>
   <footer>
   </footer>
