@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Livros</title>
   <link rel="stylesheet" href="../../home.css">
-  <link rel="stylesheet" href="form_book.css">
-  <link rel="stylesheet" href="index_book.css">
+  <!--<link rel="stylesheet" href="form_book.css">-->
 </head>
 <body>
   <header>
