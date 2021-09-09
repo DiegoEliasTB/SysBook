@@ -1,0 +1,35 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 400px;
+  height: 500px;
+  padding: 20px;
+  background-color: rgb(37, 61, 139);
+  border-radius: 8px;
+}
+
+input {
+  border: solid black 1px;
+  border-radius: 4px;
+  background-color: transparent;
+  margin-top: 5px;
+}
+
+input#email {
+  margin-bottom: 15px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  height: 36px;
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 3px;
+}
+
+button.cancel {
+  height: 32px;
+}

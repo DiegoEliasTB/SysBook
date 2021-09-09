@@ -13,17 +13,17 @@
 </head>
 <body>
   <header>
+    <span>SysBook 📚</span>
     <nav>
       <ul>
-        <li>Home</li>
-        <li><a href="livros.php">Livros</a></li>
-        <li>Sair</li>
+        <li><a href="home.php">Home</a></li>
+        <li><a href="./pages/books/">Livros</a></li>
+        <li><a href="logout.php">Sair</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <h2>Bem vindo <?php echo($_SESSION['email'])?></h2>
-    <button><a href="logout.php">Sair</a></button>
   </main>
   <footer>
     Rodapé

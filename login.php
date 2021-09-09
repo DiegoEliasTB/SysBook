@@ -27,7 +27,7 @@
   }
 
   if($row == 1) {
-    $_SESSION['nome'] = $nome;
+    $_SESSION['email'] = $nome;
     header('location: home.php');
     exit();
   } else {
