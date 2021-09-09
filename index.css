@@ -1,3 +1,12 @@
+:root {
+  --primary: #e63946;
+  --secondary: #1d3557;
+  --buttonHover: #14253E;
+  --tertiary: #457b9d;
+  --label: #a8dadc;
+  --background: #f1faee;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,8 +18,35 @@
 body {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: var(--background);
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  width: 650px;
+}
+
+h1 {
+  font-size: 62px;
+  position: absolute;
+  top: 0;
+  margin-top: 80px;
+  color: var(--buttonHover);
+}
+
+h2 {
+  margin-top: 50px;
+  text-align: center;
+  color: var(--buttonHover);
+}
+
+img {
+  width: 280px;
 }
 
 form {
@@ -18,18 +54,26 @@ form {
   flex-direction: column;
   align-items: center;
 
-  padding: 25px;
-  border: solid 2px aquamarine;
+  padding: 35px 25px 25px 25px;
+  border: solid 2px var(--primary);
+  background-color: var(--primary);
   border-radius: 8px;
-  width: 200px;
-  height: 200px;
+  width: 280px;
+  height: 300px;
+}
+
+label {
+  color: var(--background);
 }
 
 input {
-  border: solid black 1px;
+  height: 34px;
+  width: 100%;
+  border: solid var(--secondary) 2px;
   border-radius: 4px;
   background-color: transparent;
   margin-top: 5px;
+  color: white;
 }
 
 input#email {
@@ -39,9 +83,16 @@ input#email {
 button {
   cursor: pointer;
   border: none;
-  outline: none;
   height: 36px;
   width: 100%;
-  margin-top: 25px;
+  margin-top: 35px;
   border-radius: 3px;
+  background-color: var(--secondary);
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: var(--buttonHover);
 }

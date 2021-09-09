@@ -1,3 +1,12 @@
+:root {
+  --primary: #e63946;
+  --secondary: #1d3557;
+  --buttonHover: #14253E;
+  --tertiary: #457b9d;
+  --label: #a8dadc;
+  --background: #f1faee;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -5,11 +14,18 @@ form {
   width: 400px;
   height: 500px;
   padding: 20px;
-  background-color: rgb(37, 61, 139);
+  border: solid 2px var(--primary);
+  background-color: white;
   border-radius: 8px;
 }
 
+label {
+  color: var(--secondary);
+}
+
 input {
+  font-size: 18px;
+  height: 28px;
   border: solid black 1px;
   border-radius: 4px;
   background-color: transparent;
@@ -20,6 +36,43 @@ input#email {
   margin-bottom: 15px;
 }
 
+input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 80%;
+  height: 0.5em;
+  
+  border-radius: 5px;
+  background-color: var(--secondary);
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 20px;
+  width: 20px;
+  border-radius: 3px;
+  background: var(--primary);
+  cursor: pointer;
+  margin-top: 0px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+.ranged {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ranged span {
+  color: var(--secondary);
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 button {
   cursor: pointer;
   border: none;
@@ -28,8 +81,23 @@ button {
   width: 100%;
   margin-top: 5px;
   border-radius: 3px;
+  background-color: var(--secondary);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 600ms;
+}
+
+button:hover {
+  background-color: var(--buttonHover);
 }
 
 button.cancel {
   height: 32px;
+  background-color: var(--label);
+  transition: 600ms;
+}
+
+button.cancel:hover {
+  background-color: var(--tertiary);
 }

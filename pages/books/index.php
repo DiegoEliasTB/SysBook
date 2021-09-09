@@ -7,6 +7,7 @@
   <title>Livros</title>
   <link rel="stylesheet" href="../../home.css">
   <link rel="stylesheet" href="form_book.css">
+  <link rel="stylesheet" href="index_book.css">
 </head>
 <body>
   <header>
@@ -28,6 +29,8 @@
       $style_table = "margin: 25px; border: solid 2px grey;border-radius: 6px;";
       $style_tr = "margin: 10px; padding: 2px;";
       $style_td = "text-align: center; padding: 5px; background-color: rgba(53, 47, 47, 0.067);";
+      $style_a = "";
+      $style_img = "width: 25px";
 
       $query = 
       "
@@ -74,8 +77,20 @@
         echo("<td style='{$style_td}'>$num_paginas</td>");
         echo("<td style='{$style_td}'>$valor</td>");
         echo("<td style='{$style_td}'>$categoria</td>");
-        echo("<td><a href='./u_book.php?id={$id_livro}'>Editar</a></td>");
-        echo("<td><a href='deletar.php?id={$id_livro}'>Deletar</a></td>");
+        echo("
+          <td>
+            <a style='{$style_a}' href='./u_book.php?id={$id_livro}'>
+              <img style='{$style_img}' src='../../assets/icons/edit.svg' alt='Editar'>
+            </a>
+          </td>
+        ");
+        echo("
+          <td>
+            <a href='./deletar.php?id={$id_livro}'>
+              <img style='{$style_img}' src='../../assets/icons/trash.svg' alt='Editar'>
+            </a>
+          </td>
+        ");
         echo("</tr>");
         echo("<br>");
       }
@@ -86,7 +101,13 @@
 
       mysqli_close($connect);
     ?>
-    <button id="buttonDelete">Cadastrar</button>
+    
+    <button id="addButton">
+      <a href="../../pages/books/c_book.html">
+        <img src="../../assets/icons/book.svg" alt="adionar livro">
+        <span>Adionar</span>
+      </a>
+    </button>
   </main>
   <footer>
   </footer>

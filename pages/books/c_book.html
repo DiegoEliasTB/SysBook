@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="form_book.css">
 </head>
 <body>
-  
   <header>
     <span>SysBook 📚</span>
     <nav>
@@ -45,13 +44,15 @@
         <span>Espanhol</span>
       </div>
       <label for="numero">Número de páginas</label>
-      <input oninput="clickk()" type="range" min="30" max="600" step="1" name="numero" id="numero">
-      <span id="numeroValue">300</span>
+      <div class="ranged">
+        <input oninput="clickk()" type="range" min="30" max="600" step="1" name="numero" id="numero">
+        <span id="numeroValue">300</span>
+      </div>
       
       <label for="valor">Valor</label>
       <input type="text" name="valor">
 
-      <button type="reset" class="cancel">Cancelar</button>
+      <button type="reset" id="cancel" class="cancel">Cancelar</button>
       <button type="submit">Salvar</button>
     </form>
   </main>

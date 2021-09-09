@@ -1,3 +1,12 @@
+:root {
+  --primary: #e63946;
+  --secondary: #1d3557;
+  --buttonHover: #14253E;
+  --tertiary: #457b9d;
+  --label: #a8dadc;
+  --background: #f1faee;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +26,7 @@ body {
 }
 
 header {
-  background-color: brown;
+  background-color: var(--primary);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -70,13 +79,64 @@ a:hover {
 main {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  padding: 35px;
   width: 100%;
   height: 100%;
+  background-color: var(--background);
 }
 
 footer {
-  background-color: coral;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 35px;
+  text-align: center;
+  background-color: var(--primary);
   height: 100%;
+}
+
+span {
+  color: white;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+button#addButton {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+button#addButton a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+button#addButton a img {
+  width: 50px;
+  margin: 0;
+}
+
+button#addButton a span {
+  font-size: 18px;
 }

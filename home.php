@@ -26,7 +26,11 @@
     <h2>Bem vindo <?php echo($_SESSION['email'])?></h2>
   </main>
   <footer>
-    Rodapé
+    <a href="https://github.com/DiegoEliasTB/SysBook" target="_blank">
+      <img src="./assets/icons/github.svg" alt="github">
+      <span>Deloped by <strong>DiegoEliasTB</strong></span>
+    </a>
+    <span>SysBook © - Todos os direitos reservados<br>2021</span>
   </footer>
 </body>
 </html>
