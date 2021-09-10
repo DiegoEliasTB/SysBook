@@ -25,21 +25,6 @@
 
   $result = mysqli_query($connect, $query);
 
-  // while($registro = mysqli_fetch_array($result)) {
-  //   $nome = $registro['nome_livro'];
-  //   $autor = $registro['autor'];
-  //   $idioma = $registro['idioma'];
-  //   $num_paginas = $registro['num_paginas'];
-  //   $valor = $registro['valor'];
-  //   $categoria = $registro['categoria'];
-
-  //   echo("<p>{$nome}</p>");
-  //   echo("<p>{$autor}</p>");
-  //   echo("<p>{$idioma}</p>");
-  //   echo("<p>{$num_paginas}</p>");
-  //   echo("<p>{$valor}</p>");
-  //   echo("<p>{$categoria}</p>");
-  // };
   mysqli_close($connect);
   header('location: index.php');
 ?>

@@ -15,13 +15,19 @@
   <main>
     <form action="login.php" method="POST">
       <label for="email">Email</label>
-      <input type="email" name="email" id="email">
+      <div class="inputLogin" id="inputEmail">
+        <input type="email" name="email">
+      </div>
       <label for="senha">Senha</label>
-      <input type="password" name="senha" id="senha">
+      <div class="inputLogin">
+        <input type="password" name="senha" id="senha">
+        <img id="buttonEye" src="./assets/icons/eye-off.svg" alt="Livros">
+      </div>
       <button type="submit">Acessar</button>
     </form>
     <img src="./assets/images/undraw_book.svg" alt="Livros">
   </main>
   <h2>Seus sistema gerenciador de livros<br>e mais!</h2>
+  <script src="./script.js"></script>
 </body>
 </html>

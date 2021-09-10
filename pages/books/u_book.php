@@ -25,7 +25,6 @@
     <?php 
       $id = $_GET['id']; 
       echo("<form action='editar.php?id={$id}' method='POST'>");
-      echo("<h2>teste</h2>");
     ?>
       <label for="nome_livro">Nome</label>
       <input type="text" name="nome_livro">
@@ -39,8 +38,8 @@
         <option value="F">Ficção</option>
         <option value="D">Didático</option>
       </select>
-      <div>
-        <label for="idioma">Idioma</label>
+      <label for="idioma">Idioma</label>
+      <div class="radioInput">
         <input type="radio" name="idioma" id="" value="ptBr">
         <span>Português</span>
         <input type="radio" name="idioma" id="" value="In">
