@@ -21,4 +21,4 @@ Recursos a serem inplementados futuramente.
 - [ ] - Criar um dashboard na tela principal.
 
 ---
-De [Diego Formentin](https://gist.github.com/DiegoEliasTb) 💻
+De [Diego Formentin](https://github.com/DiegoEliasTb) 💻
