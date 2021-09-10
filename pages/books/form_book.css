@@ -116,3 +116,7 @@ button.cancel {
 button.cancel:hover {
   background-color: var(--tertiary);
 }
+
+footer span {
+  color: white;
+}
