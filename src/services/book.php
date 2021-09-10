@@ -1,6 +1,6 @@
 <?php 
   session_start();
-  include('../../connection.php');
+  include('./connection.php');
 
   $nome_livro = mysqli_real_escape_string($connect, $_POST['nome_livro']);
   $autor = mysqli_real_escape_string($connect, $_POST['autor']);
@@ -30,5 +30,5 @@
 
   $result = mysqli_query($connect, $query);
   mysqli_close($connect);
-  header('location: index.php')
+  header('location: ../pages/books/')
 ?>

@@ -5,24 +5,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Livros</title>
-  <link rel="stylesheet" href="form_book.css">
-  <link rel="stylesheet" href="../../home.css">
-  
+  <link rel="stylesheet" href="../../styles/home.css">
+  <link rel="stylesheet" href="../../styles/form_book.css">
 </head>
 <body>
+  
   <header>
     <span>SysBook 📚</span>
     <nav>
       <ul>
-        <li><a href="../../home.php">Home</a></li>
-        <li><a href="./">Livros</a></li>
-        <li><a href="../../logout.php">Sair</a></li>
+        <li><a href="../home/">Home</a></li>
+        <li><a href="../books/">Livros</a></li>
+        <li><a href="../../services/logout.php">Sair</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <form action="book.php" method="POST">
+    <?php 
+      $id = $_GET['id']; 
+      echo("<form action='../../services/editar.php?id={$id}' method='POST'>");
+    ?>
       <label for="nome_livro">Nome</label>
       <input type="text" name="nome_livro">
       <label for="autor">Autor</label>
@@ -35,8 +38,8 @@
         <option value="F">Ficção</option>
         <option value="D">Didático</option>
       </select>
+      <label for="idioma">Idioma</label>
       <div class="radioInput">
-        <label for="idioma">Idioma</label>
         <input type="radio" name="idioma" id="" value="ptBr">
         <span>Português</span>
         <input type="radio" name="idioma" id="" value="In">
@@ -53,15 +56,19 @@
       <label for="valor">Valor</label>
       <input type="text" name="valor">
 
-      <button type="reset" id="cancel" class="cancel">Cancelar</button>
+      <button type="reset" class="cancel">Cancelar</button>
       <button type="submit">Salvar</button>
     </form>
   </main>
 
   <footer>
-    Rodapé
+    <a href="https://github.com/DiegoEliasTB/SysBook" target="_blank">
+      <img src="../../assets/icons/github.svg" alt="github">
+      <span>Deloped by <strong>DiegoEliasTB</strong></span>
+    </a>
+    <span>SysBook © - Todos os direitos reservados<br>2021</span>
   </footer>
   
-  <script src="script.js"></script>
+  <script src="../../utils/rangeView.js"></script>
 </body>
 </html>

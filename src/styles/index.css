@@ -67,17 +67,12 @@ label {
 }
 
 input {
-  height: 34px;
   width: 100%;
-  border: solid var(--secondary) 2px;
-  border-radius: 4px;
+  height: 100%;
+  border: none;
   background-color: transparent;
-  margin-top: 5px;
-  color: white;
-}
-
-input#email {
-  margin-bottom: 15px;
+  color: var(--tertiary);
+  padding: 3px 15px 3px 20px;
 }
 
 button {
@@ -95,4 +90,29 @@ button {
 
 button:hover {
   background-color: var(--buttonHover);
+}
+
+.inputLogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 100%;
+  height: 34px;
+  margin-top: 5px;
+  background-color: var(--background);
+  border: solid var(--secondary) 2px;
+  border-radius: 4px;
+}
+
+#inputEmail {
+  margin-bottom: 20px;
+}
+
+#buttonEye {
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  margin-right: 10px;
+  width: 18px;
 }

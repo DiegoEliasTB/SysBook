@@ -1,9 +1,9 @@
 <?php 
   session_start();
-  include('connection.php');
+  include('./connection.php');
 
   if(empty($_POST['email']) || empty($_POST['senha'])) {
-    header('location: index.php');
+    header('location: ../../');
   }
 
   $email = mysqli_real_escape_string($connect, $_POST['email']);
@@ -28,10 +28,10 @@
 
   if($row == 1) {
     $_SESSION['email'] = $nome;
-    header('location: home.php');
+    header('location: ../pages/home/');
     exit();
   } else {
-    header('Location: index.php');
+    header('Location: ../../');
     exit();
   }
 ?>
