@@ -104,7 +104,7 @@
     <button id="addButton">
       <a href="../../pages/books/c_book.html">
         <img src="../../assets/icons/book.svg" alt="adionar livro">
-        <span>Adionar</span>
+        <span>Adicionar</span>
       </a>
     </button>
   </main>

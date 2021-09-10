@@ -24,6 +24,7 @@
   </header>
   <main>
     <h2>Bem vindo <?php echo($_SESSION['email'])?></h2>
+    <img class="background" src="./assets/images/backgroundBook.svg" alt="background">
   </main>
   <footer>
     <a href="https://github.com/DiegoEliasTB/SysBook" target="_blank">
