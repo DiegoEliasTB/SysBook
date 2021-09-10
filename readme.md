@@ -6,14 +6,14 @@ SysBook é um sistema para genciamento de livros com validação de usuário. Um
 
 Principais tecnologias usadas no projeto.
 
-* [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML5) - O framework web usado
-* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - Gerente de Dependência
-* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Usada para gerar RSS
-* [PHP](https://www.php.net/) - Usada para gerar RSS
-* [Apache server](http://httpd.apache.org/) - Usada para gerar RSS
-* [MariaDB](https://mariadb.org/) - Usada para gerar RSS
+* [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML5) - Usado como estrutura das páginas.
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - Usado para estilização.
+* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Usada para facilitar usabilidade do usuário.
+* [PHP](https://www.php.net/) - Usado como back-end.
+* [Apache server](http://httpd.apache.org/) - Usado para execução do projeto.
+* [MariaDB](https://mariadb.org/) - Usada como banco de dados.
 
-### 🔧 Instalação
+### 🔧 Implementações futuras
 
 Recursos a serem inplementados futuramente.
 
