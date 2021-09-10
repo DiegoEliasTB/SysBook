@@ -17,8 +17,8 @@ Principais tecnologias usadas no projeto.
 
 Recursos a serem inplementados futuramente.
 
-[] - Cadastrar usuários.
-[] - Criar um dashboard na tela principal.
+[-] - Cadastrar usuários.
+[-] - Criar um dashboard na tela principal.
 
 ---
 De [Diego Formentin](https://gist.github.com/DiegoEliasTb) 💻
