@@ -1,6 +1,8 @@
-<?php 
+<?php
   session_start();
-  include('../../connection.php');
+  include('./connection.php');
+
+  $id = $_GET['id'];  
 
   $nome_livro = mysqli_real_escape_string($connect, $_POST['nome_livro']);
   $autor = mysqli_real_escape_string($connect, $_POST['autor']);
@@ -11,24 +13,18 @@
 
   $query = 
   "
-    INSERT INTO livro (
-      nome_livro,
-      autor,
-      categoria,
-      idioma,
-      num_paginas,
-      valor
-    ) VALUES (
-      '{$nome_livro}',
-      '{$autor}',
-      '{$categoria}',
-      '{$idioma}',
-      {$numero},
-      {$valor}
-    );
+    UPDATE livro l SET 
+      l.nome_livro = '{$nome_livro}',
+      l.autor = '{$autor}',
+      l.idioma = '{$idioma}',
+      l.num_paginas = {$numero},
+      l.valor = {$valor},
+      l.categoria = '{$categoria}'
+    WHERE l.id_livro = {$id};
   ";
 
   $result = mysqli_query($connect, $query);
+
   mysqli_close($connect);
-  header('location: index.php')
+  header('location: ../pages/books/');
 ?>

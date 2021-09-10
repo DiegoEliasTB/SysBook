@@ -1,6 +1,6 @@
 <?php
   session_start();
-  include('../../connection.php');
+  include('./connection.php');
 
   $id = $_GET['id'];  
 
@@ -13,5 +13,5 @@
   $result = mysqli_query($connect, $query);
   mysqli_close($connect);
 
-  header('location: index.php');
+  header('location: ../pages/books/');
 ?>

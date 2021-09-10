@@ -10,10 +10,10 @@ buttonEye.addEventListener('click', (stateImg) => {
   stateImg = trocaImagem();
 
   if(stateImg) {
-    buttonEye.setAttribute('src', './assets/icons/eye.svg');
+    buttonEye.setAttribute('src', './src/assets/icons/eye.svg');
     input.setAttribute('type', 'text');
   } else {
-    buttonEye.setAttribute('src', './assets/icons/eye-off.svg');
+    buttonEye.setAttribute('src', './src/assets/icons/eye-off.svg');
     input.setAttribute('type', 'password');
   }
 });

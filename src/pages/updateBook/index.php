@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Livros</title>
-  <link rel="stylesheet" href="../../home.css">
-  <link rel="stylesheet" href="form_book.css">
+  <link rel="stylesheet" href="../../styles/home.css">
+  <link rel="stylesheet" href="../../styles/form_book.css">
 </head>
 <body>
   
@@ -14,9 +14,9 @@
     <span>SysBook 📚</span>
     <nav>
       <ul>
-        <li><a href="../../home.php">Home</a></li>
-        <li><a href="./">Livros</a></li>
-        <li><a href="../../logout.php">Sair</a></li>
+        <li><a href="../home/">Home</a></li>
+        <li><a href="../books/">Livros</a></li>
+        <li><a href="../../services/logout.php">Sair</a></li>
       </ul>
     </nav>
   </header>
@@ -24,7 +24,7 @@
   <main>
     <?php 
       $id = $_GET['id']; 
-      echo("<form action='editar.php?id={$id}' method='POST'>");
+      echo("<form action='../../services/editar.php?id={$id}' method='POST'>");
     ?>
       <label for="nome_livro">Nome</label>
       <input type="text" name="nome_livro">
@@ -48,8 +48,10 @@
         <span>Espanhol</span>
       </div>
       <label for="numero">Número de páginas</label>
-      <input oninput="clickk()" type="range" min="30" max="600" step="1" name="numero" id="numero">
-      <span id="numeroValue">300</span>
+      <div class="ranged">
+        <input oninput="clickk()" type="range" min="30" max="600" step="1" name="numero" id="numero">
+        <span id="numeroValue">300</span>
+      </div>
       
       <label for="valor">Valor</label>
       <input type="text" name="valor">
@@ -67,6 +69,6 @@
     <span>SysBook © - Todos os direitos reservados<br>2021</span>
   </footer>
   
-  <script src="script.js"></script>
+  <script src="../../utils/rangeView.js"></script>
 </body>
 </html>

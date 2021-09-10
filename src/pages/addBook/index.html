@@ -5,23 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Livros</title>
-  <link rel="stylesheet" href="../../home.css">
-  <link rel="stylesheet" href="form_book.css">  
+  <link rel="stylesheet" href="../../styles/home.css">
+  <link rel="stylesheet" href="../../styles/form_book.css">  
 </head>
 <body>
   <header>
     <span>SysBook 📚</span>
     <nav>
       <ul>
-        <li><a href="../../home.php">Home</a></li>
-        <li><a href="./">Livros</a></li>
-        <li><a href="../../logout.php">Sair</a></li>
+        <li><a href="../home/">Home</a></li>
+        <li><a href="../books/">Livros</a></li>
+        <li><a href="../../services/logout.php">Sair</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <form action="book.php" method="POST">
+    <form action="../../services/book.php" method="POST">
       <label for="nome_livro">Nome</label>
       <input type="text" name="nome_livro">
       <label for="autor">Autor</label>
@@ -65,6 +65,6 @@
     <span>SysBook © - Todos os direitos reservados<br>2021</span>
   </footer>
   
-  <script src="script.js"></script>
+  <script src="../../utils/rangeView.js"></script>
 </body>
 </html>

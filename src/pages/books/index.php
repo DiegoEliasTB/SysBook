@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Livros</title>
-  <link rel="stylesheet" href="../../home.css">
+  <link rel="stylesheet" href="../../styles/home.css">
   <!--<link rel="stylesheet" href="form_book.css">-->
 </head>
 <body>
@@ -13,16 +13,16 @@
     <span>SysBook 📚</span>
     <nav>
       <ul>
-        <li><a href="../../home.php">Home</a></li>
+        <li><a href="../home/">Home</a></li>
         <li><a href="./">Livros</a></li>
-        <li><a href="../../logout.php">Sair</a></li>
+        <li><a href="../../services/logout.php">Sair</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <?php 
       //session_start();
-      include("../../connection.php");
+      include("../../services/connection.php");
 
       $style_th = "text-align: center; padding: 15px;";
       $style_table = "margin: 25px; border: solid 2px grey;border-radius: 6px;";
@@ -78,14 +78,14 @@
         echo("<td style='{$style_td}'>$categoria</td>");
         echo("
           <td>
-            <a style='{$style_a}' href='./u_book.php?id={$id_livro}'>
+            <a style='{$style_a}' href='../updateBook/?id={$id_livro}'>
               <img style='{$style_img}' src='../../assets/icons/edit.svg' alt='Editar'>
             </a>
           </td>
         ");
         echo("
           <td>
-            <a href='./deletar.php?id={$id_livro}'>
+            <a href='../../services/deletar.php?id={$id_livro}'>
               <img style='{$style_img}' src='../../assets/icons/trash.svg' alt='Editar'>
             </a>
           </td>
@@ -102,7 +102,7 @@
     ?>
     
     <button id="addButton">
-      <a href="../../pages/books/c_book.html">
+      <a href="../addBook/">
         <img src="../../assets/icons/book.svg" alt="adionar livro">
         <span>Adicionar</span>
       </a>
