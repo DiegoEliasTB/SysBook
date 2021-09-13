@@ -7,8 +7,9 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="DiegoEliasTB">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>SysBook - Home</title>
   <link rel="stylesheet" href="../../styles/home.css">
 </head>
 <body>
@@ -22,7 +23,7 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="mainHome">
     <h2>Bem vindo <?php echo($_SESSION['email'])?></h2>
     <img class="background" src="../../assets/images/backgroundBook.svg" alt="background">
   </main>

@@ -73,6 +73,7 @@ input {
   background-color: transparent;
   color: var(--tertiary);
   padding: 3px 15px 3px 20px;
+  outline: none;
 }
 
 button {

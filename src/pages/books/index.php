@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="DiegoEliasTB">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Livros</title>
+  <title>SysBook - Livros</title>
   <link rel="stylesheet" href="../../styles/home.css">
-  <!--<link rel="stylesheet" href="form_book.css">-->
 </head>
 <body>
   <header>
@@ -24,11 +24,11 @@
       //session_start();
       include("../../services/connection.php");
 
-      $style_th = "text-align: center; padding: 15px;";
+      $style_th = "text-align: center; padding: 15px; margin: 10px;";
       $style_table = "margin: 25px; border: solid 2px grey;border-radius: 6px;";
       $style_tr = "margin: 10px; padding: 2px;";
-      $style_td = "text-align: center; padding: 5px; background-color: rgba(53, 47, 47, 0.067);";
-      $style_a = "";
+      $style_td = "text-align: center; padding: 8px; background-color: rgba(53, 47, 47, 0.067);";
+      $style_a = "margin-left: 5px";
       $style_img = "width: 25px";
 
       $query = 
@@ -51,11 +51,11 @@
           <thead>
             <tr style='{$style_tr}'>
               <th style='{$style_th}'>Título</th>
-              <th>Autor</th>
-              <th>Idioma</th>
-              <th>Número de páginas</th>
-              <th>Valor</th>
-              <th>Categoria</th>
+              <th style='{$style_th}'>Autor</th>
+              <th style='{$style_th}'>Idioma</th>
+              <th style='{$style_th}'>Número de páginas</th>
+              <th style='{$style_th}'>Valor</th>
+              <th style='{$style_th}'>Categoria</th>
             </tr>
           </thead>
           <tbody>    
